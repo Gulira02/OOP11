@@ -13,7 +13,7 @@ public class Main {
                 "\n"+"Residential address: "+person.residentialAddress+"\n"
                 +"Phone number: +996"+person.phoneNumber+"\n  Milana 18 жашынан бери ");
         person.canDriveACar();
-        System.out.println("/////////////////////////////////");
+        System.out.println("-------------------------------------------------");
         Person person2=new Person();
         person2.name="Lana";
         person2.surname= "Ahmadi";
