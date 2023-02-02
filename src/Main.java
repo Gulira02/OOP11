@@ -1,3 +1,6 @@
+import java.time.LocalDate;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,11 +11,11 @@ public class Main {
         person.placeOfBirth=" Russia Moscow";
         person.residentialAddress="Kyrgyzstan, Bishkek";
         person.phoneNumber= 779444510;
-        System.out.print("Name: "+person.name+"\n"+"Surname: "+person.surname+"\n"+"Age: "
+       /* System.out.print("Name: "+person.name+"\n"+"Surname: "+person.surname+"\n"+"Age: "
                 +person.age+"\n"+"Place of birth: "+person.placeOfBirth+
                 "\n"+"Residential address: "+person.residentialAddress+"\n"
                 +"Phone number: +996"+person.phoneNumber+"\n  Milana 18 жашынан бери ");
-        person.canDriveACar();
+        person.canDriveACar();*/
         System.out.println("-------------------------------------------------");
         Person person2=new Person();
         person2.name="Lana";
@@ -23,11 +26,20 @@ public class Main {
         person2.phoneNumber= 779040500;
 
 
-        System.out.print("Name: "+person2.name+"\n"+"Surname: "+person2.surname+"\n"+"Age: "
+      /*  System.out.print("Name: "+person2.name+"\n"+"Surname: "+person2.surname+"\n"+"Age: "
                 +person2.age+"\n"+"Place of birth: "+person2.placeOfBirth+
                 "\n"+"Residential address: "+person2.residentialAddress+"\n"
                 +"Phone number: +996"+person2.phoneNumber+"\n  Lana 18 жашынан баштап  ");
-        person2.canWriteCodeInJava();
+        person2.canWriteCodeInJava();*/
+
+       Programmer devops=new Programmer();
+        Scanner scanner=new Scanner(System.in);
+        devops.name= scanner.nextLine();
+        devops.surname= scanner.nextLine();
+        devops.age= scanner.nextInt();
+        System.out.println(devops.name+"  "+devops.surname);
+        System.out.println(devops.getAge());
+
 
     }
 
